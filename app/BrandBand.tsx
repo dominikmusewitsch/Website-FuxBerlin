@@ -106,7 +106,7 @@ const brandLogos = [
   },
 ];
 
-export default function App() {
+export default function BrandBand() {
   return (
     <div
       style={{

@@ -1,8 +1,12 @@
+import Link from "next/link";
 import BrandBand from "./BrandBand";
+import IPhoneMockUp from "./IPhoneMockUp";
+import Image from "next/image";
+import { Instagram } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-gray-50">
+    <main className="relative min-h-screen bg-gray-50 ">
       {/* Hero Section */}
       <section className="h-[100vh] bg-orange-200 flex items-end justify-center relative">
         <div className="text-center mb-10">
@@ -57,6 +61,71 @@ export default function Home() {
 
       <section className="overflow-hidden bg-gray-100 py-6">
         <BrandBand />
+      </section>
+
+      {/* neue Section */}
+      <section className="relative bg-gradient-to-b from-gray-50 to-gray-200 px-8 py-12">
+        {/* Überschrift */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">
+            RECENT PROJECTS
+          </h2>
+        </div>
+
+        {/* Drei Bilder nebeneinander */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+          <Image
+            src="/pics/hallway.png"
+            alt="Hallway"
+            width={300}
+            height={400}
+            className="rounded-lg shadow-lg object-cover"
+          />
+          <Image
+            src="/pics/livingroom.png"
+            alt="Livingroom"
+            width={300}
+            height={400}
+            className="rounded-lg shadow-lg object-cover"
+          />
+          <Image
+            src="/pics/office.png"
+            alt="Office"
+            width={300}
+            height={400}
+            className="rounded-lg shadow-lg object-cover"
+          />
+        </div>
+
+        {/* See more + Instagram Link */}
+        <div className="flex items-center justify-center gap-4 mb-16">
+          <p className="text-gray-700 mb-2">See more</p>
+          <Link
+            href="https://www.instagram.com/fux_berlin/"
+            target="_blank"
+            className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-black text-white hover:bg-gray-800 transition"
+          >
+            <Instagram className="w-6 h-6" />
+          </Link>
+        </div>
+
+        {/* iPhone Mockup + Text */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <IPhoneMockUp />
+
+          <div className="max-w-md text-center md:text-left">
+            <p className="text-xl md:text-2xl font-semibold mb-2">
+              MEET THE PERSON BEHIND @fux_berlin
+            </p>
+            <p className="text-gray-700 mb-4">
+              Kreativer Kopf, Social Media Enthusiast und Content Creator, der
+              Marken und Projekte auf einzigartige Weise präsentiert.
+            </p>
+            <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
+              Learn More
+            </button>
+          </div>
+        </div>
       </section>
     </main>
   );
