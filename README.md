@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦊 fux_berlin – Creator Portfolio Website
 
-## Getting Started
+<p align="center">
+<p align="center">
+  <img src="./public/favicon.png" height="60" alt="logo" />
+</p>
+A modern portfolio website for Instagram content creator <strong>@fux_berlin</strong>, built with Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.<br/>
+Designed to showcase identity, past work, collaboration options, pricing, and selected Instagram content in a polished and professional way.
+</p>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔧 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nextjs,react,typescript,tailwind,nodejs,git" height="60" />
+  <br/>
+  <img src="https://img.shields.io/badge/UI-shadcn/ui-000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Animations-Framer%20Motion-000?style=for-the-badge" />
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Project Overview
 
-## Learn More
+A modern portfolio website for Instagram creator **@fux_berlin**.  
+Built to present identity, selected work, collaboration details, pricing, and Instagram posts presented inside elegant iPhone mockups.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Focus Areas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Frontend**
 
-## Deploy on Vercel
+- Next.js App Router
+- Modular React components
+- Responsive UI with Tailwind
+- shadcn/ui component system
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **TypeScript**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Strong typing
+- Structured models (pricing, content, gallery)
+
+### **Design**
+
+- Clean layout & consistent UI language
+- Custom iPhone mockups for Instagram posts
+- UX-first approach
+
+### **Tooling & Structure**
+
+- Organized folder architecture
+- ESLint, Prettier, VSCode tooling
+- Git & GitHub workflow
+
+---
+
+## 🎯 Learning Outcomes
+
+- Practical use of the Next.js App Router
+- Building scalable UI architecture
+- Strengthened TypeScript skills
+- Applying UX/UI fundamentals
+- Introduction to animation with Framer Motion
+
+---
+
+## 📬 Contact
+
+**Dominik Musewitsch**  
+🔗 GitHub: [github.com/dominikmusewitsch](https://github.com/dominikmusewitsch)  
+📧 Email: dmusewitsch@gmail.com
