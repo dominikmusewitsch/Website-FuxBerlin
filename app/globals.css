@@ -122,3 +122,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Default body text */
+.font-body {
+  font-family: var(--font-inter);
+}
+
+/* Stylish headline font */
+.font-headline {
+  font-family: var(--font-protest);
+}
+
+/* Wenn du willst, jede Seite automatisch Inter */
+body {
+  font-family: var(--font-inter);
+}

@@ -134,11 +134,10 @@ export default function BrandBand() {
         speed={100}
         direction="left"
         logoHeight={80}
-        gap={20}
+        gap={100}
         hoverSpeed={0}
         scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
+        fadeOut={false}
         ariaLabel="Brand partners"
       />
     </div>
