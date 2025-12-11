@@ -3,28 +3,10 @@ import Image from "next/image";
 
 const brandLogos = [
   {
-    src: "/logos/benuta.png",
-    alt: "Benuta",
-    href: "https://www.benuta.de/",
-    width: 80,
-  },
-  {
-    src: "/logos/design-bestseller.png",
-    alt: "Design Bestseller",
-    href: "https://www.design-bestseller.de/",
-    width: 107,
-  },
-  {
-    src: "/logos/grau.avif",
-    alt: "Grau",
-    href: "https://www.grau.art/",
-    width: 171,
-  },
-  {
-    src: "/logos/Hisense.png",
-    alt: "Hisense",
-    href: "https://de.hisense.com/",
-    width: 504,
+    src: "/logos/SOFACOMPANY.png",
+    alt: "Sofa Company",
+    href: "https://sofacompany.com/",
+    width: 813,
   },
   {
     src: "/logos/Ikea.png",
@@ -33,46 +15,28 @@ const brandLogos = [
     width: 200,
   },
   {
+    src: "/logos/nuvoo.avif",
+    alt: "Nuvoo",
+    href: "https://nuvoo.de/",
+    width: 127,
+  },
+  {
+    src: "/logos/benuta-v2.png",
+    alt: "Benuta",
+    href: "https://www.benuta.de/",
+    width: 80,
+  },
+  {
+    src: "/logos/design-bestseller-v2.png",
+    alt: "Design Bestseller",
+    href: "https://www.design-bestseller.de/",
+    width: 207,
+  },
+  {
     src: "/logos/Kahla.png",
     alt: "Kahla",
     href: "https://www.kahlaporzellan.com/",
     width: 145,
-  },
-  {
-    src: "/logos/lumas.png",
-    alt: "Lumas",
-    href: "https://www.lumas.de/",
-    width: 107,
-  },
-  {
-    src: "/logos/MotelAMiio.png",
-    alt: "MotelAMiio",
-    href: "https://www.motelamiio.com/",
-    width: 107,
-  },
-  {
-    src: "/logos/nooma.png",
-    alt: "Nooma",
-    href: "https://noo.ma/de/",
-    width: 294,
-  },
-  {
-    src: "/logos/rebel-walls.png",
-    alt: "Rebel Walls",
-    href: "https://rebelwalls.com/",
-    width: 192,
-  },
-  {
-    src: "/logos/schoener-wohnen-kollektion.png",
-    alt: "Schöner Wohnen",
-    href: "https://www.schoener-wohnen-kollektion.de/",
-    width: 149,
-  },
-  {
-    src: "/logos/SOFACOMPANY.png",
-    alt: "Sofa Company",
-    href: "https://sofacompany.com/",
-    width: 813,
   },
   {
     src: "/logos/Sonos.png",
@@ -81,30 +45,68 @@ const brandLogos = [
     width: 386,
   },
   {
-    src: "/logos/Thonet.png",
-    alt: "Thonet",
-    href: "https://www.thonet.de/",
-    width: 120,
+    src: "/logos/schoener-wohnen-kollektion.png",
+    alt: "Schöner Wohnen",
+    href: "https://www.schoener-wohnen-kollektion.de/",
+    width: 149,
   },
   {
-    src: "/logos/nuvoo.avif",
-    alt: "Nuvoo",
-    href: "https://nuvoo.de/",
-    width: 124,
+    src: "/logos/MotelAMiio.png",
+    alt: "MotelAMiio",
+    href: "https://www.motelamiio.com/",
+    width: 107,
   },
   {
-    src: "/logos/Kettler-Logo.png",
-    alt: "Kettler",
-    href: "https://www.kettler-garden.com/",
-    width: 120,
+    src: "/logos/grau-v2.avif",
+    alt: "Grau",
+    href: "https://www.grau.art/",
+    width: 311,
   },
   {
-    src: "/logos/Fatboy.png",
-    alt: "Fatboy",
-    href: "https://www.fatboy.com/",
+    src: "/logos/Hisense.png",
+    alt: "Hisense",
+    href: "https://de.hisense.com/",
+    width: 504,
+  },
+  {
+    src: "/logos/lumas-v2.png",
+    alt: "Lumas",
+    href: "https://www.lumas.de/",
+    width: 404,
+  },
+  {
+    src: "/logos/rebel-walls-v2.png",
+    alt: "Rebel Walls",
+    href: "https://rebelwalls.com/",
     width: 80,
   },
+  {
+    src: "/logos/Fatboy-v2.png",
+    alt: "Fatboy",
+    href: "https://www.fatboy.com/",
+    width: 197,
+  },
+  {
+    src: "/logos/nooma.png",
+    alt: "Nooma",
+    href: "https://noo.ma/de/",
+    width: 294,
+  },
+  {
+    src: "/logos/Thonet-v2.png",
+    alt: "Thonet",
+    href: "https://www.thonet.de/",
+    width: 297,
+  },
+  {
+    src: "/logos/Kettler-Logo-v2.png",
+    alt: "Kettler",
+    href: "https://www.kettler-garden.com/",
+    width: 86,
+  },
 ];
+
+const newLogoHeight = 40;
 
 export default function BrandBand() {
   return (
@@ -124,17 +126,17 @@ export default function BrandBand() {
               key={logo.src}
               src={logo.src}
               alt={logo.alt}
-              height={80}
-              width={logo.width || 120}
-              style={{ display: "block", verticalAlign: "middle" }}
+              height={newLogoHeight} // logoHeight
+              width={Math.round((logo.width / 80) * newLogoHeight)} // proportional
+              style={{ display: "block" }}
             />
           ),
           href: logo.href,
         }))}
         speed={100}
         direction="left"
-        logoHeight={80}
-        gap={100}
+        logoHeight={newLogoHeight}
+        gap={50}
         hoverSpeed={0}
         scaleOnHover
         fadeOut={false}
