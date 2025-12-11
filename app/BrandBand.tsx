@@ -112,7 +112,7 @@ export default function BrandBand() {
   return (
     <div
       style={{
-        height: "120px",
+        height: "60px",
         position: "relative",
         overflow: "hidden",
         display: "flex",
