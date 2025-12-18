@@ -28,7 +28,10 @@ export default function Home() {
       </section>
 
       {/* Neue Section */}
-      <section className="relative h-[100vh] bg-gradient-to-b from-[#ffdac6] to-[#babd8d] px-8 py-12">
+      <section
+        id="about"
+        className="relative h-[100vh] bg-gradient-to-b from-[#ffdac6] to-[#babd8d] px-8 py-12"
+      >
         {/* Oben links */}
         <div className="absolute top-0 left-0 text-left mt-8 ml-8">
           <h2 className="text-3xl md:text-4xl font-bold text-black">
@@ -64,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* neue Section */}
-      <section className="relative bg-[#fa9500] px-8 py-12">
+      <section id="projects" className="relative bg-[#fa9500] px-8 py-12">
         {/* Überschrift */}
         <div className="text-center mb-[-40px] relative z-10">
           <h2 className="font-headline text-5xl md:text-9xl font-bold text-[#eb6424]">
